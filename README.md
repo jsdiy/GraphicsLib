@@ -1,4 +1,4 @@
-# ESP32用GraphicLib
+# ESP32用GraphicsLib
 
 ## 概要
 - ESP32でグラフィックLCDを使用する際のグラフィック／テキスト描画拡張ライブラリです。
