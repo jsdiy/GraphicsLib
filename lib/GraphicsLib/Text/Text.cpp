@@ -88,8 +88,8 @@ int16_t	Text::DrawChar(int16_t x, int16_t y, char cc)
 	//スケーリングを考慮した1文字が画面に収まるか
 	//・縦横とも余白を含めた大きさで判定する。文字画像バッファへは余白込みで描画しているため。
 	//・文字が画面の端に掛かる（文字が欠ける）場合は描かない。
-	if (	(0 <= x) && (x + scaledCharW < screenWidth)	&&
-			(0 <= y) && (y + scaledCharH < screenHeight)	)
+	if (	(0 <= x) && (x + scaledCharW <= screenWidth)	&&
+			(0 <= y) && (y + scaledCharH <= screenHeight)	)
 	{
 		auto fontDatas = font.GetFontData(cc);
 		DrawCharToImageBuffer(fontDatas);
